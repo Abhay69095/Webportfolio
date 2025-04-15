@@ -445,6 +445,192 @@ button {
 }
 
 /* Update responsive breakpoints */
+@media (max-width: 1400px) {
+    .projects-inner {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .hero-content {
+        max-width: 500px;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .projects-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .contact-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+
+    .hero {
+        padding: 150px 0 80px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title, 
+    .section-title_r {
+        font-size: 32px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .skill-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .projects-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .project-item {
+        min-height: auto;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-item {
+        padding: 15px 0;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+    .project-link {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Add touch support for mobile devices */
+@media (hover: none) {
+    .btn:hover,
+    .nav-link:hover,
+    .project-link:hover {
+        transform: none;
+    }
+
+    .cursor,
+    .cursor-dot {
+        display: none;
+    }
+}
+
+/* Improve loading performance on mobile */
+@media (max-width: 768px) {
+    .video-background {
+        background: var(--gradient);
+    }
+
+    .video-background video {
+        display: none;
+    }
+
+    .parallax {
+        transform: none !important;
+    }
+}
+
+/* Fix iOS specific issues */
+@supports (-webkit-touch-callout: none) {
+    .hero,
+    .section {
+        background-attachment: scroll;
+    }
+}
+
 @media (max-width: 1200px) {
     .projects-inner {
         grid-template-columns: repeat(3, 1fr);
@@ -909,28 +1095,6 @@ button {
     backdrop-filter: blur(5px);
 }
 
-/* Theme Switcher */
-.theme-switch {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 999;
-    background: var(--gradient);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 5px 15px rgba(0, 209, 255, 0.3);
-    transition: all 0.3s ease;
-}
-
-.theme-switch:hover {
-    transform: scale(1.1);
-}
-
 /* Scroll Progress */
 .scroll-progress {
     position: fixed;
@@ -1013,20 +1177,6 @@ button {
 
 .filter-btn:hover::before {
     left: 100%;
-}
-/* Dark Theme */
-[data-theme="dark"] {
-    --light: #1A1B3F;
-    --text: #ffffff;
-    --secondary: #F0F2FF;
-}
-
-[data-theme="dark"] .section {
-    background: rgba(26, 27, 63, 0.95);
-}
-
-[data-theme="dark"] .project-item {
-    background: rgba(255, 255, 255, 0.05);
 }
 
 .about-header {
