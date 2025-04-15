@@ -268,6 +268,8 @@ filterBtns.forEach(btn => {
 async function handleSubmit(event) {
     event.preventDefault();
     
+    const API_URL = 'https://your-backend-url.vercel.app/send-email';  // Update this with your backend URL
+    
     const submitBtn = event.target.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = 'Sending...';
@@ -281,7 +283,7 @@ async function handleSubmit(event) {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/send-email', {
+        const response = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
