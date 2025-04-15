@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switch">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
+    </div>
+
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo" playsinline>
+            <!-- Multiple sources for better browser compatibility -->
+            <source src="https://cdn.pixabay.com/video/2018/02/27/14560-258207713_large.mp4" type="video/mp4">
+            <source src="https://cdn.pixabay.com/video/2024/02/23/201735-916310640_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#home" class="logo">Abson</a>
+                
+                <div class="mobile-toggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21" stroke="#2E374E" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M3 6H21" stroke="#2E374E" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M3 18H21" stroke="#2E374E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="subtitle">Hello, </span>
+                <h1 class="title">Creating Exceptional Digital Experiences</h1>
+                <p class="description">I build beautiful, responsive websites and web applications that deliver outstanding user experiences. Let's bring your ideas to life!</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me and my professional journey</p>
+            </div>
+            
+            <div class="about-inner">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h3 class="about-name">Abhay Sonone</h3>
+                        <p class="about-title">BSc Information Technology Student</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn" style="margin-top: 20px;">Let's Connect</a>
+                </div>
+                
+                <div class="about-image">
+                    <img src="./website images/about.jpeg" alt="Developer working on code">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title_r">My Journey</h2>
+                <p class="section-subtitle">Professional roadmap and milestones</p>
+            </div>
+            
+            <div class="roadmap-container">
+                <div class="roadmap-item">
+                    <div class="roadmap-content">
+                        <span class="roadmap-date">2022 - 2025</span>
+                        <h3>BSc Information Technology</h3>
+                        <p>University of Mumbai - Pursuing Bachelor's degree in IT while developing core technical competencies in software development.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-content">
+                        <span class="roadmap-date">2023-Present</span>
+                        <h3>Started Freelancing</h3>
+                        <p>Began my journey in web development by taking on my first freelance projects while continuing my studies.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-content">
+                        <span class="roadmap-date">2025</span>
+                        <h3>Self-Employed Developer</h3>
+                        <p>Establishing full-time career as an independent web developer, focusing on delivering comprehensive web solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="background-color: #f5f7ff;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technical expertise I bring to every project</p>
+            </div>
+            
+            <div class="skills-inner">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML & CSS</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">React.js</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Responsive Design</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                
+             <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">MongoDB</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">MySQL</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                </div>
+            </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">WordPress</span>
+                        <span class="skill-percentage">45%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="45"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work and accomplishments</p>
+            </div>
+            
+            <!-- Add portfolio filters in projects section -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="game">Game</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="projects-inner">
+                <div class="project-item" data-category="web">
+                    <div class="project-image">
+                        <img src="./website images/image.png" alt="Event Handler Web Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Event Handler Web</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Abhay69095" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="web">
+                    <div class="project-image">
+                        <img src="./website images/websiteimage_1.png" alt="Construction Material Website">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Construction Material E-Commerce</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Abhay69095" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="game">
+                    <div class="project-image">
+                        <img src="./website images/balloon game.png" alt="Balloon Game">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Balloon Burst on Tap Web Game
+                        </h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://abhay69095.github.io/Balloon-and-Burst-on-Tap/" class="project-link">View Demo</a>
+                            <a href="https://github.com/Abhay69095" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="design">
+                    <div class="project-image">
+                        <img src="https://assets-metrostyle.abs-cbn.com/prod/metrostyle/attachments/ef02db70-cec8-4dcf-bdf5-062b3c2660cf_donate%20banner.jpg" alt="IoT Smart Dustbin">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">IoT-Based Smart Dustbin with Reward System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">ESP32</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">IoT</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://recyclebin1.onrender.com/" class="project-link">View Demo</a>
+                            <a href="https://github.com/Abhay69095" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to discuss your project? I'm just a message away</p>
+            </div>
+            
+            <div class="contact-inner">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Get in Touch</h3>
+                    <p class="contact-info-text"> I'm always open to discussing new projects or opportunities.</p>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>sononeabhay6@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7387191957</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Boisar, Maharashtra</p>
+                        </div>
+                    </div>                   
+                    
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form" class="contact-form-inner" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Discussion">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">
+                            Send Message
+                            <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M2 12L20 12M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="#home" class="logo">Abson</a>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8.28809C15.117 8.28809 14.4 8.99509 14.4 9.86709C14.4 10.7391 15.11 11.4461 16 11.4461C16.89 11.4461 17.6 10.7391 17.6 9.86709C17.6 8.99509 16.883 8.28809 16 8.28809ZM21.369 9.86709C21.369 8.71209 21.38 7.56509 21.306 6.41309C21.232 5.05809 20.885 3.87309 19.89 2.89309C18.89 1.90809 17.687 1.56809 16.306 1.49409C15.135 1.42009 13.966 1.43109 12.799 1.43109C11.631 1.43109 10.462 1.42009 9.293 1.49409C7.913 1.56809 6.703 1.91309 5.708 2.89309C4.708 3.87809 4.362 5.05809 4.288 6.41309C4.214 7.56809 4.225 8.71509 4.225 9.86709C4.225 11.0191 4.214 12.1681 4.288 13.3201C4.362 14.6751 4.709 15.8601 5.708 16.8401C6.708 17.8251 7.913 18.1651 9.293 18.2391C10.464 18.3131 11.633 18.3021 12.8 18.3021C13.97 18.3021 15.139 18.3131 16.307 18.2391C17.688 18.1651 18.897 17.8201 19.891 16.8401C20.891 15.8551 21.237 14.6751 21.311 13.3201C21.387 12.1681 21.374 11.0211 21.374 9.86709H21.369ZM19.6 14.6921C19.44 15.0161 19.264 15.2571 18.984 15.5301C18.704 15.8051 18.454 15.9761 18.12 16.1321C16.78 16.6321 14.2 16.5001 12.8 16.5001C11.4 16.5001 8.816 16.6321 7.48 16.1321C7.145 15.9761 6.891 15.8051 6.614 15.5301C6.335 15.2571 6.16 15.0161 6 14.6921C5.484 13.3801 5.62 10.8601 5.62 9.86909C5.62 8.87809 5.484 6.35509 6 5.04509C6.16 4.72109 6.335 4.48009 6.614 4.20709C6.894 3.93409 7.144 3.76209 7.48 3.60709C8.817 3.10709 11.4 3.23909 12.8 3.23909C14.2 3.23909 16.783 3.10709 18.12 3.60709C18.454 3.76209 18.708 3.93409 18.984 4.20709C19.264 4.48009 19.44 4.72109 19.6 5.04509C20.116 6.35709 19.98 8.87709 19.98 9.86909C19.98 10.8611 20.116 13.3821 19.6 14.6921Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10V10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.19 14.41 4.53 14.44 3.89 14.31C4.41 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM8.5 18.5H5.5V9.5H8.5V18.5ZM7 8.4C6.2 8.4 5.5 7.7 5.5 6.9C5.5 6.1 6.2 5.4 7 5.4C7.8 5.4 8.5 6.1 8.5 6.9C8.5 7.7 7.8 8.4 7 8.4ZM18.5 18.5H15.5V13.7C15.5 12.8 14.8 12.1 14 12.1C13.2 12.1 12.5 12.8 12.5 13.7V18.5H9.5V9.5H12.5V10.9C13 10.2 14 9.5 15 9.5C16.9 9.5 18.5 11.1 18.5 13V18.5Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C10.6868 22 9.38642 21.7413 8.17317 21.2388C6.95991 20.7362 5.85752 19.9997 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2ZM12 4C6.48 4 2 8.48 2 12C2 15.52 4.44 18.52 7.84 19.6C7.64 18.88 7.5 17.68 7.8 16.68C8.08 15.68 9.42 12.14 9.42 12.14C9.28 11.7 9.2 11.24 9.2 10.76C9.2 9.26 10.22 8.12 11.48 8.12C12.54 8.12 13.06 8.9 13.06 9.82C13.06 10.84 12.38 12.34 12.02 13.74C11.72 14.92 12.62 15.88 13.8 15.88C15.94 15.88 17.56 13.6 17.56 10.48C17.56 8.06 15.82 6.3 12.86 6.3C9.44 6.3 7.4 8.9 7.4 11.5C7.4 12.46 7.74 13.56 8.24 14.16C8.3126 14.2347 8.36444 14.3255 8.3906 14.4255C8.41676 14.5256 8.4166 14.6313 8.39 14.74C8.3 15.14 8.1 15.86 8.06 16.04C8 16.28 7.86 16.32 7.62 16.2C6.12 15.48 5.24 13.2 5.24 11.48C5.24 8.12 7.96 4.4 13.16 4.4C17.34 4.4 20.4 7.5 20.4 10.88C20.4 15.12 17.78 18 14.06 18C12.84 18 11.7 17.36 11.34 16.62L10.72 18.94C10.4 19.94 9.88 21.08 9.46 21.78C10.28 22.04 11.16 22.16 12.04 22.16C13.3532 22.16 14.6536 21.9013 15.8668 21.3988C17.0801 20.8962 18.1825 20.1596 19.1111 19.2311C20.0397 18.3025 20.7762 17.2001 21.2788 15.9868C21.7813 14.7736 22.04 13.4732 22.04 12.16C22.04 10.8468 21.7813 9.54642 21.2788 8.33317C20.7762 7.11991 20.0397 6.01752 19.1111 5.08893C18.1825 4.16035 17.0801 3.42375 15.8668 2.9212C14.6536 2.41866 13.3532 2.16 12.04 2.16C10.7268 2.16 9.42642 2.41866 8.21317 2.9212C6.99991 3.42375 5.89752 4.16035 4.96893 5.08893C4.04035 6.01752 3.30375 7.11991 2.8012 8.33317C2.29866 9.54642 2.04 10.8468 2.04 12.16C2.04 14.8122 3.09357 17.3557 4.96893 19.2311C6.8443 21.1064 9.38784 22.16 12.04 22.16L12 22V4Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
