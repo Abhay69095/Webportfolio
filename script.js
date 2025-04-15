@@ -268,7 +268,7 @@ filterBtns.forEach(btn => {
 async function handleSubmit(event) {
     event.preventDefault();
     
-    const API_URL = 'https://your-backend-url.vercel.app/send-email';  // Update this with your backend URL
+    const API_URL = 'https://webportfolio-6fpc.vercel.app/send-email';  // Update this with your backend URL
     
     const submitBtn = event.target.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
